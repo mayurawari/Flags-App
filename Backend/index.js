@@ -30,3 +30,7 @@ server.listen(port,async()=>{
         console.log(error);
     }
 })
+// {
+//   "username":"example1",
+//   "password":"123456"
+// }

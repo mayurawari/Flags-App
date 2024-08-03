@@ -1,6 +1,7 @@
 import { Router } from "express";
 const flagsroute = Router();
 
+
 flagsroute.post("/countrydetails", async (req, res) => {
     const { name } = req.body;
     try {
