@@ -14,7 +14,7 @@ const url=process.env.DB_URL;
 const server=express();
 server.use(express.json());
 server.use("/api",userroute);
-server.use("/api/flags",flagsroute);
+server.use("/api/flags",auth,flagsroute);
 
 server.get("/",(req,res)=>{
      res.send("this is home route");
